@@ -1,0 +1,25 @@
+Package: cmcnU
+Title: Processing CMC nU CDW data
+Version: 0.1
+Authors@R: 
+    person(given = "DJ",
+             family = "Chang",
+             role = c("aut", "cre"),
+             email = "hpalways@catholic.ac.kr")
+Maintainer: DJ Chang <hpalways@catholic.ac.kr>
+Description: Tools to read CMC nU CDW data
+License: MIT + file LICENSE
+LazyData: true
+URL: https://github.com
+BugReports: https://github.com
+Depends:
+    R (>= 3.1.0),
+    dplyr,
+    openxlsx,
+    readxl,
+    readr,
+    data.table
+Suggests:
+    tidyr
+Imports:
+Encoding: UTF-8
