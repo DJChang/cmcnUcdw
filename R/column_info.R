@@ -105,7 +105,7 @@ SELF약여부,DRUG,SELF약여부,투약정보,SELF약여부,is_self_medi
 수술소견,OPNT,수술소견,수술기록,수술소견,op_finding
 수술과정,OPNT,수술과정,수술기록,수술과정,op_procedure
 수술기록,OPNT,수술기록,수술기록,수술기록,op_record
-연구번호,OPNT,연구번호,수술정보,연구번호,id
+연구번호,OPRS,연구번호,수술정보,연구번호,id
 환자이름,OPRS,환자이름,수술정보,환자이름,pt_name
 수술일자,OPRS,수술일자,수술정보,수술일자,op_date
 수술처방코드,OPRS,수술처방코드,수술정보,수술처방코드,op_code
