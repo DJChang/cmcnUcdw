@@ -127,7 +127,7 @@ SELF약여부,DRUG,SELF약여부,투약정보,SELF약여부,is_self_medi
 환자이름,PATH,환자이름,병리정보,환자이름,pt_name
 처방코드,PATH,처방코드,병리정보,처방코드,path_code
 처방명,PATH,처방명,병리정보,처방명,path_name
-병리검사구분,PATH,병리검사구분,병리정보,병리검사구분,pass_class
+병리검사구분,PATH,병리검사구분,병리정보,병리검사구분,path_class
 검사코드,PATH,검사코드,병리정보,검사코드,path_order_code
 검사명,PATH,검사명,병리정보,검사명,path_order_name
 실시일자,PATH,실시일자,병리정보,실시일자,path_date
@@ -219,16 +219,16 @@ BCVA OD Method,VA0800000848,BCVA.OD.Method,안과검사,BCVA.OD.Method,BCVA_OD_M
 BCVA OD Sph,VA0800000848,BCVA.OD.Sph,안과검사,BCVA.OD.Sph,BCVA_OD_Sph
 BCVA OD Cyl,VA0800000848,BCVA.OD.Cyl,안과검사,BCVA.OD.Cyl,BCVA_OD_Cyl
 BCVA OD Ax,VA0800000848,BCVA.OD.Ax,안과검사,BCVA.OD.Ax,BCVA_OD_Ax
-BCVA OS 거리,VA0800000848,BCVA.OS.거리,안과검사,BCVA.OS.거리,BCVA_OS_거리
-BCVA OD 착용,VA0800000848,BCVA.OD.착용,안과검사,BCVA.OD.착용,BCVA_OD_착용
+BCVA OS 거리,VA0800000848,BCVA.OS.거리,안과검사,BCVA.OS.거리,BCVA_OS_dist
+BCVA OD 착용,VA0800000848,BCVA.OD.착용,안과검사,BCVA.OD.착용,BCVA_OD_wear
 BCVA OS date,VA0800000848,BCVA.OS.date,안과검사,BCVA.OS.date,BCVA_OS_date
 BCVA OS (Vision),VA0800000848,BCVA.OS..Vision.,안과검사,BCVA.OS.(Vision),BCVA_OS_(Vision)
 BCVA OS Method,VA0800000848,BCVA.OS.Method,안과검사,BCVA.OS.Method,BCVA_OS_Method
 BCVA OS Sph,VA0800000848,BCVA.OS.Sph,안과검사,BCVA.OS.Sph,BCVA_OS_Sph
 BCVA OS Cyl,VA0800000848,BCVA.OS.Cyl,안과검사,BCVA.OS.Cyl,BCVA_OS_Cyl
 BCVA OS Ax,VA0800000848,BCVA.OS.Ax,안과검사,BCVA.OS.Ax,BCVA_OS_Ax
-BCVA OD 거리,VA0800000848,BCVA.OD.거리,안과검사,BCVA.OD.거리,BCVA_OD_거리
-BCVA OS 착용,VA0800000848,BCVA.OS.착용,안과검사,BCVA.OS.착용,BCVA_OS_착용
+BCVA OD 거리,VA0800000848,BCVA.OD.거리,안과검사,BCVA.OD.거리,BCVA_OD_dist
+BCVA OS 착용,VA0800000848,BCVA.OS.착용,안과검사,BCVA.OS.착용,BCVA_OS_wear
 Refraction OD Date,VA0800000848,Refraction.OD.Date,안과검사,Refraction.OD.Date,Refraction_OD_Date
 Refraction OD Method,VA0800000848,Refraction.OD.Method,안과검사,Refraction.OD.Method,Refraction_OD_Method
 Refraction OD Ds,VA0800000848,Refraction.OD.Ds,안과검사,Refraction.OD.Ds,Refraction_OD_Ds

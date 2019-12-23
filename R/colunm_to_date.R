@@ -1,8 +1,8 @@
 
 # 하나틔 컬럼에서 문자열 형식의 컬럼을 날짜형식으로 바꿔주는 함수
-col_to_date <- function(colunm, format = "%Y%m%d"){
-  colunm <- as.Date(as.character(colunm), format = format)
-  return(colunm)
+col_to_date <- function(column, format = "%Y%m%d"){
+  column <- as.Date(as.character(column), format = format)
+  return(column)
 }
 
 
