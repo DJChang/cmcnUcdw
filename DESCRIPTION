@@ -1,7 +1,7 @@
 Package: cmcnUcdw
 Title: Processing CMC nU CDW data
-Version: 0.1
-Authors@R: 
+Version: 0.1.1
+Authors@R:
     person(given = "DJ",
              family = "Chang",
              role = c("aut", "cre"),
@@ -16,9 +16,7 @@ Depends:
     R (>= 3.1.0),
     dplyr,
     openxlsx,
-    readxl,
-    readr,
-    data.table
+    readxl
 Suggests:
     tidyr
 Imports:

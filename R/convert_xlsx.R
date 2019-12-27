@@ -3,14 +3,29 @@
 # xlsx 파일의 sheet 갯수를 알아내서 일단 로딩하기
 
 load_xlsx_sheets <- function(xlsxFile, sheet_n = 0){
-  sheets <- readxl::excel_sheets(xlsxFile)
-  sheets_var <- gsub(x = sheets, pattern = "^\\d+\\.", replacement = "")
-  sheets_var <- gsub(x = sheets_var, pattern = "-", replacement = "_")
-  sheets_var <- gsub(x = sheets_var, pattern = "\\(0800000848\\)", replacement = "")
+  sheets_var <- readxl::excel_sheets(xlsxFile) %>%
+    gsub(pattern = "^\\d+\\.", replacement = "") %>%
+    gsub(pattern = "-", replacement = "_") %>%
+    gsub(pattern = "\\(0800000848\\)", replacement = "") %>%
+    gsub(pattern = "코호트", replacement = "COHT") %>%
+    gsub(pattern = "수진정보", replacement = "ACPT") %>%
+    gsub(pattern = "기초임상정보", replacement = "VTLS") %>%
+    gsub(pattern = "진단정보", replacement = "DIAG") %>%
+    gsub(pattern = "수술정보", replacement = "OPRS") %>%
+    gsub(pattern = "수술기록", replacement = "OPNT") %>%
+    gsub(pattern = "처방정보", replacement = "PRCP") %>%
+    gsub(pattern = "투약정보", replacement = "DRUG") %>%
+    gsub(pattern = "진단검사", replacement = "SPDO") %>%
+    gsub(pattern = "병리정보", replacement = "PATH") %>%
+    gsub(pattern = "영상정보", replacement = "RADI") %>%
+    gsub(pattern = "기능정보", replacement = "FUNC") %>%
+    gsub(pattern = "내시경정보", replacement = "ENDO") %>%
+    gsub(pattern = "안과검사", replacement = "VA")
+
   data_types <- unique(col_info$xlsx_sheet_name)
 
   if (sheet_n == 0) {
-    for (i in 1:length(sheets)){
+    for (i in 1:length(sheets_var)){
       assign(sheets_var[i], read.xlsx(xlsxFile, sheet = i), envir = .GlobalEnv)
 
       for (data_type in data_types){
