@@ -1,6 +1,6 @@
 Package: cmcnUcdw
 Title: Processing CMC nU CDW data
-Version: 0.1.1
+Version: 0.1.2
 Authors@R:
     person(given = "DJ",
              family = "Chang",
@@ -15,9 +15,9 @@ BugReports: https://github.com
 Depends:
     R (>= 3.1.0),
     dplyr,
-    openxlsx,
-    readxl
+    lubridate,
+    readr,
+    stringr,
 Suggests:
-    tidyr
 Imports:
 Encoding: UTF-8
