@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .xlsx_target_col_name <-  function(origin_df, table_type, cdw_col_name){
   ret <- dplyr::filter(origin_df,
                        sheet_name == table_type,
@@ -7,6 +8,8 @@
 
 
 # cdw_read_xlsx -----------------------------------------------------------
+=======
+>>>>>>> 643bb2d0b16ce8b95de32d956ce18566c154ca69
 cdw_read_xlsx <- function(xlxs_file, sheet = 1){
     # 엑셀파일이지 확인하기
   if (!endsWith(xlsx_file, "xlsx")) {
@@ -52,6 +55,15 @@ cdw_read_xlsx <- function(xlxs_file, sheet = 1){
 }
 
 
+<<<<<<< HEAD
+=======
+.xlsx_target_col_name <-  function(origin_df, table_type, cdw_col_name){
+  ret <- dplyr::filter(origin_df,
+                sheet_name == table_type,
+                xlsx_cdw_col == cdw_col_name)
+  return(ret$target_col)
+}
+>>>>>>> 643bb2d0b16ce8b95de32d956ce18566c154ca69
 
 #
 # xlsx_file = "~/Dropbox/R_Projects/rplus_lecture/enc_16398_subT_samle.xlsx"

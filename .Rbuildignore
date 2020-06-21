@@ -2,3 +2,6 @@
 ^\.Rproj\.user$
 ^cmcnUcdw\sample$
 ^cmcnUcdw\backup$
+^cmcnUcdw\R\cdw_col_name.csv$
+^cmcnUcdw\R\cdw_col_name.rds$
+^cmcnUcdw\R\csv_file_names.rds$
