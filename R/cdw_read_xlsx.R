@@ -7,7 +7,7 @@
 
 
 # cdw_read_xlsx -----------------------------------------------------------
-cdw_read_xlsx <- function(xlxs_file, sheet = 1){
+cdw_read_xlsx <- function(xlsx_file, sheet = 1){
     # 엑셀파일이지 확인하기
   if (!endsWith(xlsx_file, "xlsx")) {
     stop('not an xlsx file')
